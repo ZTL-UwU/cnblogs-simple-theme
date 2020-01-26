@@ -352,7 +352,9 @@ body {
 #sideBarMain,
 #comment_form_container,
 #footer,
-.day {
+.day,
+.feedbackItem,
+.comment_my_posted {
     padding: 30px 30px 30px 30px;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 5px 15px rgba(50, 50, 93, .1), 0 5px 8px rgba(0, 0, 0, .07) !important;
@@ -394,4 +396,13 @@ a[href="#"] {
 
 #mainContent {
     padding: 0;
+}
+
+.feedback_area_title {
+    color: #fff;
+    border: none;
+}
+
+.feedbackCon {
+    border: none;
 }
