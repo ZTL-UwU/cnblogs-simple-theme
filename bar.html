@@ -3,4 +3,20 @@
     var h = o.clientHeight || o.offsetHeight;
     var bar = document.getElementById("sideBar");
     bar.style.height = h + "px";
+
+    function JumpToTop() {
+        window.scrollTo(0, 0);
+    }
 </script>
+
+<div style="height: 60px; width: 60px; border-radius: 30px; position: fixed; right: 50px; bottom: 50px; box-shadow: 0 5px 15px rgba(50, 50, 93, .1), 0 5px 8px rgba(0, 0, 0, .07) !important;background: rgba(252, 252, 252, 0.90) !important; text-align: center;"
+    onclick="JumpToTop()" id="top_btn">
+    <img src="https://s2.ax1x.com/2020/01/27/1uFvYF.png" onclick="JumpToTop()"></img>
+</div>
+
+<style>
+    #top_btn:hover {
+        box-shadow: 0 5px 15px rgba(50, 50, 93, .22), 0 5px 8px rgba(0, 0, 0, .22) !important;
+        transform: translateY(-2px);
+    }
+</style>

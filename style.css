@@ -291,24 +291,6 @@ span {
     background-color: #0000 !important;
 }
 
-#div_digg {
-    margin: 0;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    overflow: hidden;
-    filter: blur(3px);
-}
-
-.diggit {
-    height: 100vh;
-    width: 100vw;
-    background: url('https://s2.ax1x.com/2020/01/26/1mv8pV.jpg') !important;
-}
-
 #ad_t2 {
     display: none;
 }
