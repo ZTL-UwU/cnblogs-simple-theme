@@ -1,0 +1,26 @@
+<script>
+    function JumpToTop() {
+        window.scrollTo(0, 0);
+    }
+    setTimeout(function() {
+        $('code').attr('style', 'border: none !important;')
+    }, 100);
+
+    setTimeout(function() {
+        $('.hljs').attr('style', "font-family:  'Fira Code' !important; color: #4D4D4C;")
+    }, 100);
+    setTimeout(function() {
+        $('#tbCommentBody').attr('placeholder', "Leave a comment!")
+    }, 500);
+</script>
+<div style="height: 60px; width: 60px; border-radius: 30px; position: fixed; right: 50px; bottom: 50px;background: rgba(255, 255, 255, 0.90) !important; text-align: center;" onclick="JumpToTop()" id="top_btn">
+    <img src="https://s1.ax1x.com/2020/07/18/U2GUUK.png" style="height:55%;width:55%;margin-top:10px;"></img>
+</div>
+<img src="https://s1.ax1x.com/2020/07/18/U28XjA.png" style="height:33px;width:33px;position:fixed;bottom:137px;right: 63.5px;z-index: 2"></img>
+<div style="height: 60px; width: 60px; border-radius: 30px; background: rgba(255, 255, 255, 0.90) !important; text-align: center;z-index: 1" class="diggit">
+</div>
+<style>
+    #top_btn:hover {
+        transform: translateY(-2px);
+    }
+</style>
