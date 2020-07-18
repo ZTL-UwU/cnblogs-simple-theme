@@ -23,7 +23,7 @@
 
 2. 将`博客皮肤`改为`SimpleMemory`
 
-3. 下载`style.css`、`page_footer.html`、`bar.html` / 下载release中的simple-theme.zip
+3. 下载`style.css`、`page_footer.html`、`side_bar.html` / 下载release中的`simple-theme-xxx.zip`
 
 4. 将`style.css`中的内容复制到`页面定制 CSS 代码`
 
