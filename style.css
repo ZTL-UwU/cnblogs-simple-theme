@@ -1239,6 +1239,8 @@ p {
   font-family: 'Fira Sans', 'Noto Sans SC';
 }
 
+.PostListTitle,
+.entrylistTitle,
 h1,
 h2,
 h3,
@@ -1286,6 +1288,18 @@ h3:before {
   display: none;
 }
 
+.entrylistPosttitle {
+  border-left-color: #409EFF;
+}
+
+.feedbackItem {
+  border-left: 5px solid #a8a8a8;
+  padding: 8px 16px;
+  background-color: #F8F8F8 !important;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
 #under_post_news {
   display: none;
 }
@@ -1301,6 +1315,9 @@ blockquote {
   border-right: none;
   border-bottom: none;
   color: #909399 !important;
+  padding: 8px 16px;
+  background-color: #F8F8F8 !important;
+  border-radius: 4px;
 }
 
 body {
@@ -1311,17 +1328,50 @@ blockquote .MathJax {
   color: #909399 !important;
 }
 
+.post a {
+  text-decoration: underline !important;
+}
+
+#cb_post_title_url {
+  text-decoration: none !important
+}
+
+.pager a,
+#EntryTag a {
+  box-shadow: none;
+  color: #fff !important;
+  background: #409eff !important;
+  padding: 8px 10px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  outline: none !important;
+  text-decoration: none !important;
+  margin-bottom: 5px !important;
+  font-size: 12px !important;
+}
+
+.pager a:hover,
+#EntryTag a:hover {
+  background: #66b1ff !important;
+  color: #fff !important;
+}
+
 .MathJax {
-  color: #303133;
+  color: #606266;
 }
 
 #header,
-.post,
 #sideBarMain,
 #comment_form_container,
 #footer,
-.day,
-.feedbackItem,
+.forFlow,
 .comment_my_posted {
   padding: 30px 30px 30px 30px;
   border-radius: 4px;
@@ -1346,8 +1396,7 @@ a[href="#"] {
 }
 
 #blog-calendar {
-  margin-left: -15px;
-  width: 200px;
+  display: none;
 }
 
 #sideBar {
@@ -1457,12 +1506,6 @@ pre {
   word-break: break-word;
 }
 
-blockquote {
-  padding: 8px 16px;
-  background-color: #F8F8F8 !important;
-  border-radius: 4px;
-}
-
 code {
   border-radius: 4px !important;
 }
@@ -1512,10 +1555,6 @@ code {
   color: #303133;
 }
 
-a {
-  color: #409EFF !important;
-}
-
 #navList>li:nth-child(1) {
   display: none;
 }
@@ -1539,7 +1578,7 @@ div {
 }
 
 a {
-  color: #303133 !important;
+  color: #606266;
   transition: all 0.2s;
 }
 
