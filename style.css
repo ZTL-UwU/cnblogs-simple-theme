@@ -1573,7 +1573,8 @@ hr {
   border-color: #409EFF !important;
 }
 
-div {
+div,
+.feedbackListSubtitle a {
   color: #606266 !important;
 }
 
@@ -1651,7 +1652,8 @@ hr {
   margin-left: 20px;
 }
 
-#profile_block {
+#profile_block,
+#author_profile {
   padding: 8px 16px;
   border-radius: 4px;
   border-left: 5px solid #67C23A;
@@ -1687,4 +1689,8 @@ hr {
 
 #footer {
   border: none !important;
+}
+
+.comment_vote {
+  display: none;
 }
