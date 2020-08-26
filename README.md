@@ -1,5 +1,7 @@
 # cnblogs simple theme
 
+https://img.shields.io/github/license/zhangtianli2006/cnblogs-simple-theme)](https://github.com/zhangtianli2006/cnblogs-simple-theme/blob/master/LICENSE
+
 ### cnblogs主题
 
 演示:[zhangtianli's blog](https://www.cnblogs.com/zhangtianli/)
