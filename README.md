@@ -15,7 +15,7 @@
 
 ## 读者友好
 用强大的`Fira Code` 作为代码字体，连字功能大大增加代码可读性
-![](https://upload-images.jianshu.io/upload_images/9506800-e2bb5d401918bc86.png?imageMogr2/auto-orient/strip|imageView2/2)
+![](https://s1.ax1x.com/2020/08/26/dWKVns.png)
 [Fira Code Github](https://github.com/tonsky/FiraCode)
 ![](https://s1.ax1x.com/2020/07/18/U2Gh8g.jpg)
 
