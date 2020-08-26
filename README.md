@@ -1,6 +1,6 @@
 # cnblogs simple theme
 
-![LISENCE](https://img.shields.io/github/license/zhangtianli2006/cnblogs-simple-theme)](https://github.com/zhangtianli2006/cnblogs-simple-theme/blob/master/LICENSE)
+[![LISENCE](https://img.shields.io/github/license/zhangtianli2006/cnblogs-simple-theme)](https://github.com/zhangtianli2006/cnblogs-simple-theme/blob/master/LICENSE)
 
 ### cnblogs主题
 
