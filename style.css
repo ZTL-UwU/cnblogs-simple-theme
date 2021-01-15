@@ -41,6 +41,10 @@
   margin-bottom: 20px;
 }
 
+.post {
+    background-color: #fff;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -1496,7 +1500,7 @@ a[href="#"] {
 }
 
 .hljs-meta-string {
-  color: #4D4D4C !important;
+  color: #718C00 !important;
 }
 
 .hljs-built_in {
@@ -1760,4 +1764,12 @@ hr {
 
 .comment_vote {
   display: none;
+}
+
+#big_banner {
+    display: none !important;
+}
+
+#top_nav {
+    display: none !important;
 }
