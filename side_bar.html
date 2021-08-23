@@ -1,4 +1,6 @@
 <script>
+    hidden_block_shown = false;
+
     function JumpToTop() {
         window.scrollTo(0, 0);
     }
@@ -15,6 +17,10 @@
         $('#tbCommentBody').attr('placeholder', "Leave a comment!");
     }, 500);
 
+    setTimeout(function () {
+        $('#hid-block-btn').attr('onclick', 'show_hide_block()');
+    }, 100);
+
     function full() {
         $('#topics').attr('style', 'position: absolute; top: 0; left: 0; z-index: 10;');
         $('#hid').attr('style', 'display: block');
@@ -26,6 +32,16 @@
 
     function fresh() {
         location.reload(true);
+    }
+
+    function show_hide_block() {
+        if (hidden_block_shown === false) {
+            $('#hid-block').attr('style', 'display: block');
+        }
+        else {
+            $('#hid-block').attr('style', 'display: none');
+        }
+        hidden_block_shown = !hidden_block_shown;
     }
 </script>
 
@@ -56,7 +72,7 @@
         position: fixed;
         bottom: 207px;
         right: 65px;
-        z-index: 110;
+        z-index: 1100;
     }
 
     #hid {
