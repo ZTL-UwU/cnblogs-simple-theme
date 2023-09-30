@@ -1,3 +1,47 @@
+#post_detail details {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-left: 4px solid #50bfff;
+  background-color: #ecf8ff;
+	padding-left: 8px;
+  padding-right: 10px;
+  border-radius: 0px;
+}
+
+#post_detail details > summary:after {
+    float: right;
+    content: "[-]";
+    color: rgb(96, 98, 102);
+    filter: contrast(50%);
+    font-family: monospace;
+}
+
+#post_detail details[open] > summary:after {
+    content: "[+]";
+}
+
+#post_detail details > summary {
+    filter: contrast(200%);
+    transition: all .3s ease;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border-bottom: 1px dotted rgb(96, 98, 102);
+}
+
+#post_detail details > summary:hover {
+    border-bottom: 1px dotted #50bfff;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
 /*--scrollbar--*/
 
 ::-webkit-scrollbar {
@@ -36,7 +80,7 @@
 .topicListFooter {
   background-color: #fff;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 0px;
   margin-right: 0px;
   margin-bottom: 20px;
 }
@@ -59,6 +103,7 @@ textarea {
 
 #green_channel {
   border: none;
+  text-align: left;
 }
 
 #green_channel a {
@@ -945,6 +990,230 @@ textarea {
 }
 
 @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+  unicode-range: U+0370-03FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
   font-family: 'Fira Sans';
   src: url('https://code.cdn.mozilla.net/fonts/eot/FiraSans-Hair.eot');
   src: local('Fira Sans Hair'), url('https://code.cdn.mozilla.net/fonts/eot/FiraSans-Hair.eot') format('embedded-opentype'), url('https://code.cdn.mozilla.net/fonts/woff/FiraSans-Hair.woff') format('woff'), url('https://code.cdn.mozilla.net/fonts/ttf/FiraSans-Hair.ttf') format('truetype');
@@ -1095,11 +1364,10 @@ h2:before,
 h3:before {
   content: "# ";
   color: #409EFF !important;
-  font-family: 'Fira Code';
 }
 
 #home {
-  border-radius: 4px;
+  border-radius: 0px;
   margin-top: 30px !important;
   background: #0000 !important;
   padding: 0 !important;
@@ -1132,7 +1400,7 @@ h3:before {
   border-left: 5px solid #a8a8a8;
   padding: 8px 16px;
   background-color: #F8F8F8 !important;
-  border-radius: 4px;
+  border-radius: 0px;
   font-size: 13px;
 }
 
@@ -1153,14 +1421,18 @@ blockquote {
   color: #909399 !important;
   padding: 8px 16px;
   background-color: #F8F8F8 !important;
-  border-radius: 4px;
+  border-radius: 0px;
+}
+
+body {
+  background: #0000;
 }
 
 blockquote .MathJax {
   color: #909399 !important;
 }
 
-.post a {
+#cnblogs_post_body a {
   text-decoration: underline !important;
 }
 
@@ -1173,13 +1445,13 @@ blockquote .MathJax {
   box-shadow: none;
   color: #fff !important;
   background: #409eff !important;
-  padding: 8px 10px !important;
+  padding: 3px 8px !important;
   text-align: center !important;
   font-size: 14px !important;
   border: none !important;
   transition: all 0.2s ease !important;
   border: none !important;
-  border-radius: 4px !important;
+  border-radius: 0px !important;
   cursor: pointer !important;
   display: inline-block !important;
   vertical-align: middle !important;
@@ -1199,14 +1471,21 @@ blockquote .MathJax {
   color: #606266;
 }
 
+#commentform_title {
+  background-image: none;
+}
+
+.comment_textarea {
+  background-color: rgb(248, 248, 248);
+}
+
 #header,
 #sideBarMain,
-#comment_form_container,
 #footer,
 .forFlow,
 .comment_my_posted {
   padding: 30px 30px 30px 30px;
-  border-radius: 4px;
+  border-radius: 0px;
   background-color: #fff !important;
 }
 
@@ -1232,7 +1511,7 @@ a[href="#"] {
 }
 
 #sideBar {
-  border-radius: 4px;
+  border-radius: 0px;
   margin: 0;
   padding: 0;
 }
@@ -1331,6 +1610,14 @@ code {
   padding: 10px !important;
 }
 
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
 #cnblogs_post_body table,
 .cnblogs-post-body table {
   border: none !important;
@@ -1339,12 +1626,12 @@ code {
 }
 
 code {
-  border-radius: 4px !important;
+  border-radius: 0px !important;
 }
 
 .comment_textarea {
   border: none !important;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 .diggit {
@@ -1405,6 +1692,10 @@ hr {
   border-color: #409EFF !important;
 }
 
+..postTitle a:hover {
+  margin-left: 0px !important;
+}
+
 div,
 .feedbackListSubtitle a {
   color: #606266 !important;
@@ -1421,7 +1712,7 @@ a:hover {
 
 body {
   color: #606266;
-  background-color: #f2f2f3;
+  background-color: #f9f9f9;
 }
 
 #btn_comment_submit {
@@ -1450,7 +1741,7 @@ body {
 }
 
 #green_channel a {
-  border-radius: 4px !important;
+  border-radius: 0px !important;
 }
 
 .comment_textarea,
@@ -1487,7 +1778,7 @@ hr {
 #profile_block,
 #author_profile {
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 0px;
   border-left: 5px solid #67C23A;
   border-top: none;
   border-right: none;
@@ -1503,12 +1794,12 @@ hr {
 .author_avatar {
   padding: 0;
   margin-top: 2.5px;
-  border-radius: 4px !important;
+  border-radius: 0px !important;
 }
 
 .recent_comment_body {
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 0px;
   border-left: 5px solid #50bfff;
   border-top: none;
   border-right: none;
@@ -1539,18 +1830,3 @@ hr {
     display: none !important;
 }
 
-#hid-block {
-  display: none;
-  border-radius: 4px;
-  padding: 20px !important;
-  background-color: #FBFBFB !important;
-}
-
-#hid-block-btn {
-  border-top: 5px solid #E0E0E0;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  padding: 10px;
-  padding-left: 30px;
-  background-color: #F0F0F0 !important;
-}
