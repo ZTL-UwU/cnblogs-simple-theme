@@ -8,7 +8,7 @@
 #post_detail details>summary:after {
   float: right;
   content: "[-]";
-  color: rgb(96, 98, 102);
+  color: #606266;
   filter: contrast(50%);
   font-family: "Fira Code", monospace;
 }
@@ -166,7 +166,7 @@ strong {
 #home {
   border-radius: 0px;
   margin-top: 30px !important;
-  background: #0000 !important;
+  background: #000000 !important;
   padding: 0 !important;
   border: none !important;
   box-shadow: none !important;
@@ -178,7 +178,7 @@ strong {
 .catListView,
 .catListFeedback,
 .newsItem {
-  background-color: #0000 !important;
+  background-color: #000000 !important;
 }
 
 #ad_t2 {
@@ -221,7 +221,7 @@ blockquote {
 }
 
 body {
-  background: #0000;
+  background: #000000;
 }
 
 blockquote .MathJax {
@@ -270,7 +270,7 @@ blockquote .MathJax {
 }
 
 .comment_textarea {
-  background-color: rgb(248, 248, 248);
+  background-color: #f8f8f8;
 }
 
 #sideBarMain,
@@ -436,7 +436,7 @@ code {
   position: fixed;
   right: 50px;
   bottom: 120px;
-  background: rgb(252, 252, 252) !important;
+  background: #fcfcfc !important;
   text-align: center;
   z-index: 110;
 }
@@ -448,7 +448,7 @@ code {
   position: fixed;
   right: 51px;
   bottom: 190px;
-  background: rgb(252, 252, 252) !important;
+  background: #fcfcfc !important;
   text-align: center;
   z-index: 110;
 }
@@ -541,7 +541,7 @@ body {
 
 .comment_textarea,
 #tbCommentBody {
-  background: rgb(250, 250, 250);
+  background: #fafafa;
   width: 100%;
   font-size: 15px !important;
   font-family: "Fira Code", monospace;
@@ -581,7 +581,7 @@ hr {
   border-right: none;
   border-bottom: none;
   color: #5e6d82 !important;
-  background-color: rgb(240, 249, 235);
+  background-color: #f0f9eb;
 }
 
 #homepage_top_pager {
