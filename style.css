@@ -24,6 +24,17 @@
   cursor: pointer;
 }
 
+/*--header--*/
+
+#header {
+  padding: 10px 30px;
+  background-color: #fff !important;
+}
+
+#navigator {
+  margin-top: 0 !important;
+}
+
 /*--scrollbar--*/
 
 ::-webkit-scrollbar {
@@ -140,9 +151,14 @@ strong {
   display: none;
 }
 
-h1:before,
-h2:before,
-h3:before {
+#topics .postTitle {
+  font-size: 32px !important;
+  padding-left: 0 !important;
+}
+
+#cnblogs_post_body h1:before,
+#cnblogs_post_body h2:before,
+#cnblogs_post_body h3:before {
   content: "# ";
   color: #409eff !important;
 }
@@ -257,7 +273,6 @@ blockquote .MathJax {
   background-color: rgb(248, 248, 248);
 }
 
-#header,
 #sideBarMain,
 #footer,
 .forFlow,
@@ -469,6 +484,7 @@ hr {
 
 .postTitle {
   border-color: #409eff !important;
+  font-size: 20px;
 }
 
 .postTitle a:hover {
@@ -609,4 +625,21 @@ hr {
 
 #top_nav {
   display: none !important;
+}
+
+@media print {
+  #blog_post_info_block,
+  #comment_form,
+  #header,
+  #footer,
+  .postDesc,
+  #floating-controls,
+  #sideBar {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  #mainContent {
+    width: auto;
+  }
 }
