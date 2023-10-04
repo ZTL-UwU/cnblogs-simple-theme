@@ -1,36 +1,73 @@
 
 /*--color palette--*/
 
-:root {
-  --color-bg-body: #f9f9f9;
-  --color-bg-box: #ffffff;
-  --color-bg-profile: #f0f9eb;
-  --color-bg-comment: #f8f8f8;
-  --color-bg-float: #fcfcfc;
+@media print, (prefers-color-scheme: light) {
+  :root {
+    --color-bg-body: #f9f9f9;
+    --color-bg-box: #ffffff;
+    --color-bg-profile: #f0f9eb;
+    --color-bg-comment: #f8f8f8;
+    --color-bg-float: #fcfcfc;
 
-  --color-text: #606266;
-  --color-text-emph: #303133;
-  --color-text-comment: #5e6d82;
-  --color-text-quote: #909399;
+    --color-text: #606266;
+    --color-text-emph: #303133;
+    --color-text-comment: #5e6d82;
+    --color-text-quote: #909399;
 
-  --color-bd-profile: #67c23a;
-  --color-bd-blockquote: #a8a8a8;
-  --color-bd-th: #909399;
-  --color-bd-td: #ebeef5;
-  --color-bd-hr: #e4e7ed;
+    --color-bd-profile: #67c23a;
+    --color-bd-blockquote: #a8a8a8;
+    --color-bd-th: #909399;
+    --color-bd-td: #ebeef5;
+    --color-bd-hr: #e4e7ed;
 
-  --color-button-favorite: #e6a23c;
-  --color-button-follow: #f56c6c;
+    --color-button-favorite: #e6a23c;
+    --color-button-follow: #f56c6c;
 
-  --color-theme-1: #ecf8ff;
-  --color-theme-2: #b9d7ff;
-  --color-theme-3: #50bfff;
-  --color-theme-4: #66b1ff;
-  --color-theme-5: #409eff;
-  --color-theme-6: #4271ae;
+    --color-theme-1: #ecf8ff;
+    --color-theme-2: #b9d7ff;
+    --color-theme-3: #50bfff;
+    --color-theme-4: #66b1ff;
+    --color-theme-5: #409eff;
+    --color-theme-6: #4271ae;
 
-  --color-transparent: rgba(0, 0, 0, 0);
+    --color-transparent: rgba(0, 0, 0, 0);
+  }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-body: #000000;
+    --color-bg-box: #2a2a2a;
+    --color-bg-profile: #33f153;
+    --color-bg-comment: #555b5b;
+    --color-bg-float: #2b3030;
+
+    --color-text: #dcdcdc;
+    --color-text-emph: #f1f1f1;
+    --color-text-comment: #ffffff;
+    --color-text-quote: #fafafa;
+
+    --color-bd-profile: #80ff90;
+    --color-bd-blockquote: #6ac8ff;
+    --color-bd-th: #909399;
+    --color-bd-td: #ebeef5;
+    --color-bd-hr: #d4d6d6;
+
+    --color-button-favorite: #fdc255;
+    --color-button-follow: #fd6b25;
+
+    --color-theme-6: #ecf8ff;
+    --color-theme-5: #b9d7ff;
+    --color-theme-4: #50bfff;
+    --color-theme-3: #66b1ff;
+    --color-theme-2: #409eff;
+    --color-theme-1: #4271ae;
+
+    --color-transparent: rgba(0, 0, 0, 0);
+  }
+}
+
+/*--table--*/
 
 table {
   border-collapse: collapse !important;
