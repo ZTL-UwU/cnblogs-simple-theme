@@ -7,7 +7,6 @@
     --color-bg-box: #ffffff;
     --color-bg-profile: #f0f9eb;
     --color-bg-comment: #f8f8f8;
-    --color-bg-float: #fcfcfc;
 
     --color-text: #606266;
     --color-text-emph: #303133;
@@ -17,6 +16,7 @@
     --color-bd-profile: #67c23a;
     --color-bd-blockquote: #a8a8a8;
     --color-bd-th: #909399;
+    --color-bg-th: #fafafa;
     --color-bd-td: #ebeef5;
     --color-bd-hr: #e4e7ed;
 
@@ -36,11 +36,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg-body: #000000;
+    --color-bg-body: #222222;
     --color-bg-box: #2a2a2a;
-    --color-bg-profile: #33f153;
-    --color-bg-comment: #555b5b;
-    --color-bg-float: #2b3030;
+    --color-bg-profile: #488853;
+    --color-bg-comment: #404444;
 
     --color-text: #dcdcdc;
     --color-text-emph: #f1f1f1;
@@ -50,6 +49,7 @@
     --color-bd-profile: #80ff90;
     --color-bd-blockquote: #6ac8ff;
     --color-bd-th: #909399;
+    --color-bg-th: #464646;
     --color-bd-td: #ebeef5;
     --color-bd-hr: #d4d6d6;
 
@@ -77,10 +77,17 @@ table {
 th {
   padding: 10px !important;
   border-bottom: 2px solid var(--color-bd-th) !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  background-color: var(--color-bg-th) !important;
 }
 
 td {
   border-top: 1.5px solid !important;
+  border-left: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
   padding: 10px !important;
 }
 
@@ -203,6 +210,14 @@ code,
   font-family: "Fira Code", consolas, monospace;
 }
 
+.cnblogs-markdown :not(pre, div, td) > code, .blogpost-body :not(pre, div, td) > code {
+  font-family: "Fira Code", consolas, monospace;
+  background-color: var(--color-bg-comment);
+  color: var(--color-text);
+  font-size: 14px;
+  padding: 0 6px;
+}
+
 .PostListTitle,
 .entrylistTitle,
 h1,
@@ -212,7 +227,7 @@ h4,
 h5,
 h6,
 strong {
-  color: var(--color-text-emph);
+  color: var(--color-text-emph) !important;
 }
 
 #blogTitle h2 {
@@ -245,8 +260,13 @@ strong {
 .catListPostArchive.sidebar-block,
 .catListView,
 .catListFeedback,
+.catListTag,
 .newsItem {
   background-color: var(--color-transparent) !important;
+}
+
+.bottom-right-buttons {
+  background-color: var(--color-bg-box) !important;
 }
 
 #ad_t2 {
@@ -396,7 +416,6 @@ a[href="#"] {
 
 .cnblogs-markdown .hljs {
   border: none !important;
-  background-color: var(--color-bg-comment) !important;
 }
 
 .postCon {
@@ -428,7 +447,7 @@ code {
   position: fixed;
   right: 50px;
   bottom: 120px;
-  background: var(--color-bg-float) !important;
+  background: var(--color-bg-box) !important;
   text-align: center;
   z-index: 110;
 }
@@ -440,7 +459,7 @@ code {
   position: fixed;
   right: 51px;
   bottom: 190px;
-  background: var(--color-bg-float) !important;
+  background: var(--color-bg-box) !important;
   text-align: center;
   z-index: 110;
 }
@@ -490,7 +509,7 @@ div,
 }
 
 a {
-  color: var(--color-text);
+  color: var(--color-text) !important;
   transition: all 0.2s;
 }
 

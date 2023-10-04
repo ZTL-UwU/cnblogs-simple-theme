@@ -1,12 +1,11 @@
 <script type="text/javascript">
-$(function() {
-    MathJax.loader.ready().then(() => {
-        setTimeout(function() {
-            document.querySelectorAll('.detail-fold-default-closed')
-                .forEach(e => e.removeAttribute('open'));
-        }, 100);
-    })
-})
+    $(function () {
+        MathJax.loader.ready().then(() => {
+            setTimeout(function () {
+                document.querySelectorAll(".detail-fold-default-closed").forEach((e) => e.removeAttribute("open"));
+            }, 100);
+        });
+    });
 </script>
 
 <script>
@@ -21,7 +20,7 @@ $(function() {
     }, 100);
 
     setTimeout(function () {
-        $(".hljs").attr("style", "font-family: 'Fira Code' monospace !important; color: #4D4D4C;");
+        $(".hljs").attr("style", "font-family: 'Fira Code' monospace !important;");
     }, 100);
 
     setTimeout(function () {
@@ -56,67 +55,46 @@ $(function() {
 </script>
 
 <div id="floating-controls">
-<div
-    style="
-        height: 60px;
-        width: 60px;
-        border-radius: 30px;
-        position: fixed;
-        right: 50px;
-        bottom: 50px;
-        background: rgba(255, 255, 255, 0.9) !important;
-        text-align: center;
-        z-index: 100;
-    "
-    onclick="JumpToTop()"
-    id="top_btn"
->
-    <img src="https://s1.ax1x.com/2020/07/18/U2GUUK.png" style="height: 55%; width: 55%; margin-top: 10px" />
-</div>
+    <div
+        style="
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            text-align: center;
+            z-index: 100;
+        "
+        onclick="JumpToTop()"
+        id="top_btn"
+        class="bottom-right-buttons"
+    >
+        <img src="https://s1.ax1x.com/2020/07/18/U2GUUK.png" style="height: 55%; width: 55%; margin-top: 10px" />
+    </div>
 
-<img
-    src="https://s1.ax1x.com/2020/07/18/U28XjA.png"
-    style="height: 33px; width: 33px; position: fixed; bottom: 137px; right: 63.5px; z-index: 110"
-/>
-<img src="https://s1.ax1x.com/2020/07/23/ULsHgI.png" class="tmp" onclick="full()" id="show_2" />
-<img src="https://s1.ax1x.com/2020/07/23/ULs78A.png" class="tmp" onclick="fresh()" id="hid_2" />
-<div
-    style="
-        height: 60px;
-        width: 60px;
-        border-radius: 30px;
-        background: rgb(255, 255, 255) !important;
-        text-align: center;
-        z-index: 100;
-    "
-    class="diggit"
-></div>
-<div
-    style="
-        height: 60px;
-        width: 60px;
-        border-radius: 30px;
-        background: rgb(255, 255, 255) !important;
-        text-align: center;
-        z-index: 100;
-    "
-    onclick="full()"
-    class="full-screen"
-    id="show"
-></div>
-<div
-    style="
-        height: 60px;
-        width: 60px;
-        border-radius: 30px;
-        background: rgb(255, 255, 255) !important;
-        text-align: center;
-        z-index: 100;
-    "
-    onclick="fresh()"
-    class="full-screen"
-    id="hid"
-></div>
+    <img
+        src="https://s1.ax1x.com/2020/07/18/U28XjA.png"
+        style="height: 33px; width: 33px; position: fixed; bottom: 137px; right: 63.5px; z-index: 110"
+    />
+    <img src="https://s1.ax1x.com/2020/07/23/ULsHgI.png" class="tmp" onclick="full()" id="show_2" />
+    <img src="https://s1.ax1x.com/2020/07/23/ULs78A.png" class="tmp" onclick="fresh()" id="hid_2" />
+    <div
+        style="height: 60px; width: 60px; border-radius: 30px; text-align: center; z-index: 100"
+        class="bottom-right-buttons diggit"
+    ></div>
+    <div
+        style="height: 60px; width: 60px; border-radius: 30px; text-align: center; z-index: 100"
+        onclick="full()"
+        class="bottom-right-buttons full-screen"
+        id="show"
+    ></div>
+    <div
+        style="height: 60px; width: 60px; border-radius: 30px; text-align: center; z-index: 100"
+        onclick="fresh()"
+        class="bottom-right-buttons full-screen"
+        id="hid"
+    ></div>
 </div>
 
 <style>
